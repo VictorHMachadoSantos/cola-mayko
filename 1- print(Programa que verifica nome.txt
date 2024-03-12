@@ -1,0 +1,92 @@
+1- print("Programa que verifica nome e idade.")
+
+nome = input("Entre com seu nome:")
+idade = int(input("Digite sua idade:"))
+
+print("Seu nome é:", nome)
+print("Sua idade é:", idade)
+
+2 - def calcular_volume(lado):
+    volume = lado ** 3
+    return volume
+def main():
+    lado = float(input("Digite o comprimento do lado da caixa de água (em metros): "))
+    volume = calcular_volume(lado)
+    print("O volume da caixa d'água é de", volume, "metros cúbicos.")
+
+if __name__ == "__main__":
+    main()
+
+3 - numero01 = int(input("Digite o primeiro número."))
+numero02 = int(input("Digite o segundo número."))
+
+if(numero01 >= numero02):
+    print("O primeiro número {} é maior{}." .format( numero01, numero02))
+else:
+    print("O segundo número {} é maior {}." .format( numero02, numero01))
+
+4 - maca = 2,40
+compra = int(input("Quantas maçãs você vai comprar?"))
+
+if(compra < 12):
+    maca = 2,80
+else:
+    maca = 2,40
+
+valor = compra * maca
+
+print("O preço é: {}" .format(valor))
+
+5 - print("Programa que verifica se você pode votar ou não.")
+
+idade = int(input("Digite sua idade:"))
+
+while(idade >= 16):
+        print("Você pode votar!!")
+if(idade <= 16):
+        print("Você não pode votar!!")
+
+6 - print("Programa que mostra os multiplos de 3 de 1 a 100.")
+contador = 1
+while(contador <= 100):
+    if(contador%3 == 0):
+       print(contador, "é multiplo de 3.")
+    contador = contador + 1
+print("Fim do programa!")
+
+7 - print("Programa de tabuada.")
+
+numero_fornecido = int(input("Digite um número inteiro:"))
+multiplicador = 1
+while(multiplicador <= 10):
+    resultado = numero_fornecido * multiplicador
+    print(numero_fornecido, "X", multiplicador, "=", resultado)
+    multiplicador = multiplicador + 1
+
+
+8 - print("Programa para verificação da Glicose")
+def classificar_glicose(glicose):
+    if glicose <= 100:
+        return "Normal"
+    elif glicose <= 140:
+        return "High"
+    else:
+        return "Diabetes"
+
+def main():
+    try:
+        glicose = int(input("Digite a quantidade de glicose no sangue: "))
+        classificacao = classificar_glicose(glicose)
+        print("Classificação da glicose:", classificacao)
+    except ValueError:
+        print("Por favor, digite um número válido.")
+
+if __name__ == "__main__":
+    main() 
+9 - def main():
+    print("Números pares de 0 a 30:")
+    for i in range(0, 31, 2):
+        print(i)
+
+if __name__ == "__main__":
+    main()
